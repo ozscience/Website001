@@ -100,9 +100,9 @@
     </style>
 </head>
 <body>
-    <div class="container" id="bodyContent">
+    <div class="container" id="bodyContent"><!--Body Content-->
         <!--Header Bar--><header>
-            <img src="https://i.ibb.co/hmqyQCJ/1.png" alt="Pincome Logo" border="0" class="img-fluid">
+            <img src="https://i.ibb.co/hmqyQCJ/1.png" alt="Pincome Logo" border="0" class="img-fluid" id="Home">
         </header>
         <!--Introductory Text--><div>
             <!--<p id="introText">
@@ -115,13 +115,40 @@
             <!--<p id="introText">
                 New, Personal faucet being built now, special and uncluttered with nonsense and chaos!
             </p>-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#Home">Home</a>
+            
+                    <!-- Add a navigation toggle button for smaller screens -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#walletsAnchor">Wallets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#passiveAnchor">Passive</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#clickAble">Clickable</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
     <div class="container"><!--Primary Body Container-->
         <div class="row"><!--Body Row-->
             <div class="col-md-4 col-sm-12">
                 <!--First Column: Free money from Wallets-->
-                <h5>
+                <h5 id="#walletsAnchor">
                     Free Money from Wallets
                 </h5>
                 <ol id="incomeWallets"><!--List Container-->
@@ -169,7 +196,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <!--Second Column: Free money from Passive Pasks-->
-                <h5>
+                <h5 id="passiveAnchor">
                     Free Money from a few starting clicks
                 </h5>
                 <ol id="opportunities"><!--List Container-->
@@ -402,7 +429,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <!-- Content for column 3 -->
-                <h5>
+                <h5 id="clickAble">
                     Free Money from a few clicks a day
                 </h5>
                 <ol id="clickableIncome"><!--List Container-->
